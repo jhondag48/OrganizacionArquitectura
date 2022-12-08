@@ -1,0 +1,15 @@
+numero_decimal = int(input("Ingrese el numero a convertir: "))
+num = numero_decimal
+modulos = []
+
+while numero_decimal != 0:
+    modulo = numero_decimal % 2
+    cociente = numero_decimal // 2
+    modulos.append(modulo) # guardamos el módulo calculado
+    numero_decimal = cociente # el cociente pasa a ser el número de entrada
+
+print(num)
+print(modulos)
+nombre = input("¿Como se llama?")
+
+print("Me alegro de conocerte, ",nombre)
